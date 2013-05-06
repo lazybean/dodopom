@@ -1,0 +1,9 @@
+[{
+  "settings": [ "master" ],
+    "_frame_view": {
+      "verbs": ["GET"],
+      "path":"/",
+      "call": "frame.list"
+    }
+
+}]

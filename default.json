@@ -1,0 +1,14 @@
+[
+{
+  "settings": [ "master" ],
+    "specs": {
+      "config": {
+        "db": {
+          "mongodb": "mongodb://localhost/weddingGuests",            
+          "database": "weddingGuests",
+          "server": "localhost"
+        }   
+      }
+    }
+}
+]

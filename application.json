@@ -1,0 +1,26 @@
+[
+{
+  "settings": [
+    "master" 
+    ],
+    "appPort": "8666",
+    "specs": {
+      "frame": {
+        "type": "HTMLFrameMojit",
+        "config": {
+          "title": "Guest Creation",
+          "deploy": true,
+          "child": {
+            "type": "guestForm"
+          }
+        }
+      }
+    }
+},
+{
+  "settings": [ "environment:development" ],
+  "staticHandling": {
+    "forceUpdate": true
+  }
+}
+]
