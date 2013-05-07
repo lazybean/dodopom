@@ -35,5 +35,4 @@ YUI.add('guestModel', function (Y, NAME) {
     var newGuest = new Y.guestModel.Guest(guestObj);
     newGuest.save(callback);
   };
-
 });

@@ -11,7 +11,10 @@
           "title": "Guest Creation",
           "deploy": true,
           "child": {
-            "type": "guestForm"
+            "type": "guestForm",
+            "config": {
+            "mongoUrl": "mongodb://localhost/weddingGuests"
+}
           }
         }
       }

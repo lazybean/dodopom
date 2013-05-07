@@ -1,6 +1,7 @@
 /*jslint anon:true, sloppy:true, nomen:true*/
 YUI.add('guestForm', function(Y, NAME) {
 
+  Y.log('Am I called once? ' + new Date(), 'WARN', NAME);
   /**
   * The guestForm module.
   *

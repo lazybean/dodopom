@@ -16,15 +16,16 @@ YUI.add('guestFormModelFoo', function(Y, NAME) {
   Y.namespace('mojito.models')[NAME] = {
 
     init: function(config) {
-      if (this.count) { this.count += 1; }
-      else { this.count = 1; } 
-      Y.log('init: ' + this.count, 'WARN', NAME);
       this.config = config;
+      Y.log('init : ' + Y.JSON.stringify(config), 'WARN', NAME);
       //Y.guestModel.connect(config.db.mongodb);
-      try {
-        Y.guestModel.connect();
-      } catch(e) {
-        Y.log('error: cannot connect: ' + e); 
+      if( config.mongoUrl && Y.mongoose[config.mongoUrl] !== true) {
+        try {
+          Y.mongoose.connect(config.mongoUrl);
+          Y.mongoose[config.mongoUrl] = true;
+        } catch(e) {
+          Y.log('error: cannot connect: ' + e); 
+        }
       }
 
     },
