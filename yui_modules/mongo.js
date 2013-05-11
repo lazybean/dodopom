@@ -21,8 +21,8 @@ YUI.add('mongo', function (Y, NAME) {
           obj[key] = {type: val};
         }
       });
+
       Y.log('createSchema createdSchema is ' + createdSchema, 'WARN', NAME);
-      Y.log('createSchema Y.db.mongo.schema is ' + Y.JSON.stringify(Y.db[NAME].schema), 'WARN', NAME);
       if (!createdSchema ) {
         Y.log('createSchema: schema does not exist yet: ' + Y.JSON.stringify(schemaObj), 'WARN', NAME);
         schema = new mongoose.Schema(schemaObj); 
@@ -33,7 +33,6 @@ YUI.add('mongo', function (Y, NAME) {
 
           getList: function (cb) {
             Y.log('getList ' + schemaName, 'WARN', NAME);
-            debugger;
             this.model.find({}, null, {sort: {name: 1}}, cb);
           },
           create: function(obj, cb) {
@@ -66,7 +65,6 @@ YUI.add('mongo', function (Y, NAME) {
           }
         };
         Y.log('createSchema new createdSchema is ' + Y.JSON.stringify(createdSchema), 'WARN', NAME);
-        Y.log('createSchema new createdSchema is ' + Y.JSON.stringify(Y.db[NAME].schema), 'WARN', NAME);
       } 
       Y.db[NAME].schema[schemaName] = createdSchema;
       return createdSchema;
