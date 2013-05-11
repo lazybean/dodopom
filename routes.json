@@ -2,8 +2,12 @@
   "settings": [ "master" ],
     "_frame_view": {
       "verbs": ["GET"],
-      "path":"/",
+      "path": "/",
+      "call": "frame.index"
+    },
+    "_frame_list": {
+      "verbs": ["GET"],
+      "path": "/list",
       "call": "frame.list"
     }
-
 }]

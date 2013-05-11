@@ -18,14 +18,10 @@ YUI.add('guestFormModelFoo', function(Y, NAME) {
     init: function(config) {
       this.config = config;
       Y.log('init : ' + Y.JSON.stringify(config), 'WARN', NAME);
-      //Y.guestModel.connect(config.db.mongodb);
-      if( config.mongoUrl && Y.mongoose[config.mongoUrl] !== true) {
-        try {
-          Y.mongoose.connect(config.mongoUrl);
-          Y.mongoose[config.mongoUrl] = true;
-        } catch(e) {
-          Y.log('error: cannot connect: ' + e); 
-        }
+      if( config.mongo) {
+        Y.log('init: create schema: ' + config.mongo.modelName, 'WARN', NAME); 
+        this.model = Y.db.mongo.createSchema( config.mongo.schema, config.mongo.modelName, config.mongo.url);
+        this.model.connect();
       }
 
     },
@@ -40,10 +36,18 @@ YUI.add('guestFormModelFoo', function(Y, NAME) {
       callback(null, { some: 'data' });
     },
 
-    getGuestsList: Y.guestModel.getList,
+    getGuestsList: function (cb) {
+      this.model.getList(cb);
+    },
 
-    createGuest: Y.guestModel.createGuest
+    createGuest: function(obj, cb) {
+      this.model.create(obj, cb);
+    },
+
+    getFields: function(cb) {
+      this.model.getFields(cb);
+    }
 
   };
 
-}, '0.0.1', {requires: ['guestModel']});
+}, '0.0.1', {requires: ['mongo']});

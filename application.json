@@ -3,6 +3,11 @@
   "settings": [
     "master" 
     ],
+    "yui": {
+      "config":{
+        "gallery": "gallery-2012.05.16-20-37"
+      }
+    },
     "appPort": "8666",
     "specs": {
       "frame": {
@@ -13,8 +18,20 @@
           "child": {
             "type": "guestForm",
             "config": {
-            "mongoUrl": "mongodb://localhost/weddingGuests"
-}
+              "mongo": {
+                "url": "mongodb://localhost/weddingGuests",
+                "modelName": "Guests",
+                "schema": {
+                  "name":  { "type": "String", "required": true },  
+                  "firstName": "String",
+                  "veget": "Boolean",
+                  "needHotel": "Boolean",
+                  "hotelStart": { "type": "Date" },
+                  "hotelEnd": { "type": "Date"},
+                  "lang": "String"
+                }
+              }
+            }
           }
         }
       }

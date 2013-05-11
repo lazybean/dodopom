@@ -1,21 +1,23 @@
-YUI.add('guestModel', function (Y, NAME) {
+/*YUI.add('guestModel', function (Y, NAME) {
 
   Y.mongoose = require('mongoose');
 
   var Schema = Y.mongoose.Schema,
   ObjectId = Y.mongoose.Schema.ObjectId,
   mongodb = "mongodb://localhost/weddingGuests",            
+  */
   /* Schema Definition */ 
-  Guest = new Schema({
-    name:  { type: String, required: true },  
-    firstName: String,
-    veget: Boolean,
-    needHotel: Boolean,
-    hotelStart: { type: Date },
-    hotelEnd: { type: Date},
-    lang: String
+  /*Guest = new Schema({
+    name:  { type: "String", required: true },  
+    firstName: "String",
+    veget: "Boolean",
+    needHotel: "Boolean",
+    hotelStart: { type: "Date" },
+    hotelEnd: { type: "Date"},
+    lang: "String"
   }); 
 
+  Y.log('compiling model Guests', 'WARN', NAME);
   Y.mongoose.model('Guests', Guest);
 
   
@@ -36,3 +38,4 @@ YUI.add('guestModel', function (Y, NAME) {
     newGuest.save(callback);
   };
 });
+*/

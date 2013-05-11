@@ -1,5 +1,10 @@
 <div id="{{mojit_view_id}}">
-  {{#guests}}
-  {{firstName}}
-  {{/guests}}
+  <div> 
+    {{#fields}} 
+    {{name}}
+    {{/fields}}
+  </div>
+  {{#each guests}}
+  <div>  {{this.name}} {{this.firstName}}</div>
+  {{/each}}
 </div>

@@ -23,31 +23,35 @@ YUI.add('guestForm', function(Y, NAME) {
     *        to the Mojito API.
     */
     index: function(ac) {
-      ac.models.get('guestFormModelFoo').getData(function(err, data) {
+      ac.models.get('guestFormModelFoo').getFields(function(err, data) {
         if (err) {
           ac.error(err);
           return;
         }
         ac.assets.addCss('./index.css');
         ac.done({
-          status: 'Mojito is working.',
-          data: data
+          "fields": data
         });
       });
     },
 
     create: function(ac) {
       var obj = ac.params.getFromBody(),
+      model = ac.models.get('guestFormModelFoo'),
       me = this;
-      Y.log('guestForm create: '+ obj);
-      ac.models.get('guestFormModelFoo').createGuest(obj, function (){me.list(ac);});
+      Y.log('guestForm create: '+ Y.JSON.stringify(obj), 'WARN', NAME);
+      model.createGuest(obj, function (){me.list(ac);});
     },
 
     list: function (ac) {
-      ac.models.get('guestFormModelFoo').getGuestsList( function (err, data) {
+      var model = ac.models.get('guestFormModelFoo');
+      model.getGuestsList( function (err, data) {
+        Y.log('list callback', 'WARN', NAME);
         if (!err) {
           Y.log('list cb: ' + data, 'WARN', NAME);
-          ac.done({"guests": data});
+          model.getFields(function(err, fields ){
+            ac.done({"data": data, "fields": fields}, 'json');
+          });
         } else {
           ac.done({error: 1});
         }
