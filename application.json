@@ -34,8 +34,8 @@
                   "email": "String",
                   "veget": "Boolean",
                   "needHotel": "Boolean",
-                  "hotelStart": { "type": "Date" },
-                  "hotelEnd": { "type": "Date"},
+                  "hotelStart": {"type": "Date"},
+                  "hotelEnd": {"type": "Date"},
                   "lang": "String"
                 }
               }

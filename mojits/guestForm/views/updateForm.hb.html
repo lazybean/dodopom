@@ -1,4 +1,9 @@
 <div class="yui3-skin-sam" id="{{mojit_view_id}}">
+  <style>
+    .yui3-popup-calendar-hidden {
+      display: none;
+    }
+  </style>
   {{#if error}} 
   <p class="error">
   {{error}}
@@ -23,9 +28,9 @@
         <input type="hidden" value="0" name="needHotel" />
         <label> need Hotel: </label> <input name="needHotel" type="checkbox" value="1" {{#if needHotel}}checked {{/if}} />  
       </div>
-      <div class="yui3-control-group"> <label> From: </label> <input name="hotelStart" type="text" value="{{hotelStart}}" />  
+      <div class="yui3-control-group"> <label> From: </label> <input name="hotelStart" type="text" value="{{hotelStart}}" class="time" />  
       </div>
-      <div class="yui3-control-group"> <label> To: </label> <input name="hotelEnd" type="text" value="{{hotelEnd}}" />  
+      <div class="yui3-control-group"> <label> To: </label> <input name="hotelEnd" type="text" value="{{hotelEnd}}" class="time" />  
       </div>
       <div class="yui3-control-group"> <label> lang: </label> <input name="lang" type="text" value="{{lang}}" />  
       </div>
