@@ -44,6 +44,10 @@ YUI.add('guestFormModelFoo', function(Y, NAME) {
       this.model.create(obj, cb);
     },
 
+    updateGuest: function(obj, cb) {
+      this.model.update(obj, cb);
+    },
+
     getFields: function(cb) {
       this.model.getFields(cb);
     },

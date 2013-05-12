@@ -45,7 +45,7 @@ YUI.add('mongo', function (Y, NAME) {
 
           update: function(obj, cb) {
             Y.log('update :' + Y.JSON.stringify(obj), 'WARN', NAME);
-            this.model.update({'id': obj.id} , obj,  cb);
+            this.model.findByIdAndUpdate(obj.id , obj,  cb);
           },
 
           connect: function () {
@@ -73,6 +73,7 @@ YUI.add('mongo', function (Y, NAME) {
             Y.log('findById id: ' + id, 'WARN', NAME);
             this.model.findById(id, cb);
           }
+
         };
 
         Y.log('createSchema new createdSchema is ' + Y.JSON.stringify(createdSchema), 'WARN', NAME);

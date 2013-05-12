@@ -47,6 +47,7 @@ YUI.add('guestFormBinderIndex', function(Y, NAME) {
       formData = {
         "name": form.get('name').get('value'),
         "firstName": form.get("firstName").get('value'),
+        "email": form.get("email").get('value'),
         "veget": form.get('veget').get('value'),
         "needHotel": form.get('needHotel').get('value'),
         "hotelStart": form.get('hotelStart').get('value'),

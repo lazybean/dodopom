@@ -14,5 +14,10 @@
       "verbs": ["GET"],
       "path": "/updateForm",
       "call": "frame.updateForm"
+    },
+    "_frame_updateGuest": {
+      "verbs": ["POST"],
+      "path": "/updateForm",
+      "call": "frame.updateFormPost"
     }
 }]

@@ -66,16 +66,17 @@ YUI.add('guestForm', function(Y, NAME) {
     },
 
 
-    update: function(ac) {
+    updateFormPost: function(ac) {
       var obj = ac.params.getFromBody(),
       model = ac.models.get('guestFormModelFoo'),
       me = this;
       Y.log('guestForm update :'+ Y.JSON.stringify(obj), 'WARN', NAME);
       model.updateGuest(obj, function (err, data){
+        Y.log('guestForm upddated:'+ Y.JSON.stringify(obj) + '\n err: ' + err , 'WARN', NAME);
         if (err) {
           ac.done({'error': err});
         } else {
-          ac.done({}, 'updateSuccess');
+          ac.done(data, 'updateSuccess');
         }});
     },
 
