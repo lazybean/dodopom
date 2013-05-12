@@ -1,0 +1,32 @@
+<div id="{{mojit_view_id}}">
+  {{#if error}} 
+  <p class="error">
+  {{error}}
+  </p>
+  {{else}}
+  <form class="yui3-form yui3-form-aligned" action="">
+    <fieldset>
+      <input name="id" type="hidden" value="{{id}}"/>
+
+      <div class="yui3-control-group" ><label> Name: <input name="name" type="text" value="{{name}}" readonly /></label>
+      </div>
+      <div class="yui3-control-group"><label> First Name: <input name="firstName" type="text" value="{{firstName}}" readonly/></label>
+      </div>
+      <div class="yui3-control-group"> <label> email: <input name="email" type="text"  value="email" readonly/></label>
+      </div>
+      <div class="yui3-control-group"> <label> veget: <input name="veget" type="checkbox" checked={{veget}} />  </label>
+      </div>
+      <div class="yui3-control-group"> <label> need Hotel: <input name="needHotel" type="checkbox" />  </label>
+      </div>
+      <div class="yui3-control-group"> <label> From: <input name="hotelStart" type="text" />  </label>
+      </div>
+      <div class="yui3-control-group"> <label> To: <input name="hotelEnd" type="text" />  </label>
+      </div>
+      <div class="yui3-control-group"> <label> lang: <input name="hotelEnd" type="text" />  </label>
+      </div>
+      <div class="yui3-control-group"> <button>Ok</button>
+      </div> 
+    </fieldset>
+  </form>
+  {{/if}}
+</div>

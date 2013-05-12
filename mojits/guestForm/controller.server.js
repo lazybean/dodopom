@@ -34,6 +34,28 @@ YUI.add('guestForm', function(Y, NAME) {
         });
       });
     },
+    /**
+    * Method return an guest update form
+    *
+    * @param ac {Object} The ActionContext that provides access
+    *        to the Mojito API.
+    */
+    updateForm: function(ac) {
+      var id = ac.params.getFromUrl('id');
+      if ( id ) {
+      ac.models.get('guestFormModelFoo').getById(id, function(err, data) {
+        
+        if ( !err ) {
+        ac.done(data);
+        } else {
+        ac.done({error:'Guest not found'});
+        }
+      });
+      } else {
+        ac.done({error:'Who are you?'});
+      }
+
+    },
 
     create: function(ac) {
       var obj = ac.params.getFromBody(),
@@ -41,6 +63,20 @@ YUI.add('guestForm', function(Y, NAME) {
       me = this;
       Y.log('guestForm create: '+ Y.JSON.stringify(obj), 'WARN', NAME);
       model.createGuest(obj, function (){me.list(ac);});
+    },
+
+
+    update: function(ac) {
+      var obj = ac.params.getFromBody(),
+      model = ac.models.get('guestFormModelFoo'),
+      me = this;
+      Y.log('guestForm update :'+ Y.JSON.stringify(obj), 'WARN', NAME);
+      model.updateGuest(obj, function (err, data){
+        if (err) {
+          ac.done({'error': err});
+        } else {
+          ac.done({}, 'updateSuccess');
+        }});
     },
 
     list: function (ac) {

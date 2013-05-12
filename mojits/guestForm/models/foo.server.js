@@ -46,6 +46,10 @@ YUI.add('guestFormModelFoo', function(Y, NAME) {
 
     getFields: function(cb) {
       this.model.getFields(cb);
+    },
+
+    getById: function(id, cb) {
+      this.model.findById(id, cb);
     }
 
   };

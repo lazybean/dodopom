@@ -43,6 +43,11 @@ YUI.add('mongo', function (Y, NAME) {
               cb(err, data);});
           },
 
+          update: function(obj, cb) {
+            Y.log('update :' + Y.JSON.stringify(obj), 'WARN', NAME);
+            this.model.update({'id': obj.id} , obj,  cb);
+          },
+
           connect: function () {
             if( !Y.db[NAME].connections[url] ) {
               Y.db[NAME].connections[url] = true;
@@ -62,8 +67,14 @@ YUI.add('mongo', function (Y, NAME) {
               fields.push(field);
             });
             cb(null, fields);
+          },
+
+          findById: function(id, cb) {
+            Y.log('findById id: ' + id, 'WARN', NAME);
+            this.model.findById(id, cb);
           }
         };
+
         Y.log('createSchema new createdSchema is ' + Y.JSON.stringify(createdSchema), 'WARN', NAME);
       } 
       Y.db[NAME].schema[schemaName] = createdSchema;

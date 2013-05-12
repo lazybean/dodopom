@@ -9,5 +9,10 @@
       "verbs": ["GET"],
       "path": "/list",
       "call": "frame.list"
+    },
+    "_frame_updateForm": {
+      "verbs": ["GET"],
+      "path": "/updateForm",
+      "call": "frame.updateForm"
     }
 }]
