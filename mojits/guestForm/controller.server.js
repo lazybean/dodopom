@@ -46,13 +46,13 @@ YUI.add('guestForm', function(Y, NAME) {
       ac.models.get('guestFormModelFoo').getById(id, function(err, data) {
         
         if ( !err ) {
-        ac.done({'update': true, 'data': data });
+        ac.done({'update': true, 'data': data, lang: ac.intl.lang() });
         } else {
         ac.done({error:'Guest not found'});
         }
       });
       } else {
-        ac.done({'update': false, 'data': {} });
+        ac.done({'update': false, 'data': {}, lang: ac.intl.lang() });
       }
 
     },
@@ -75,7 +75,7 @@ YUI.add('guestForm', function(Y, NAME) {
         if (err) {
           ac.done({'error': err});
         } else {
-          ac.done(data, 'updateSuccess');
+          ac.done({'data': data, 'lang': ac.intl.lang()} , 'updateSuccess');
         }};
 
       Y.log('guestForm update :'+ Y.JSON.stringify(obj), 'WARN', NAME);
@@ -104,4 +104,4 @@ YUI.add('guestForm', function(Y, NAME) {
 
   };
 
-}, '0.0.1', {requires: ['mojito', 'mojito-assets-addon', 'mojito-models-addon', 'mojito-params-addon',  'guestFormModelFoo']});
+}, '0.0.1', {requires: ['mojito', 'mojito-intl-addon', 'mojito-assets-addon', 'mojito-models-addon', 'mojito-params-addon',  'guestFormModelFoo']});
