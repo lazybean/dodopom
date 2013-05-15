@@ -2,7 +2,7 @@
   "settings": [ "master" ],
     "_frame_view": {
       "verbs": ["GET"],
-      "path": "/",
+      "path": "/tableall",
       "call": "frame.index"
     },
     "_frame_list": {
@@ -12,12 +12,12 @@
     },
     "_frame_updateForm": {
       "verbs": ["GET"],
-      "path": "/updateForm",
+      "path": "/guest",
       "call": "frame.updateForm"
     },
     "_frame_updateGuest": {
       "verbs": ["POST"],
-      "path": "/updateForm",
+      "path": "/guest",
       "call": "frame.updateFormPost"
     }
 }]
