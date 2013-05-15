@@ -75,7 +75,7 @@ YUI.add('guestForm', function(Y, NAME) {
         if (err) {
           ac.done({'error': err});
         } else {
-          ac.done(data, 'updateSuccess');
+          ac.done({'data': data, 'lang': ac.intl.lang()} , 'updateSuccess');
         }};
 
       Y.log('guestForm update :'+ Y.JSON.stringify(obj), 'WARN', NAME);

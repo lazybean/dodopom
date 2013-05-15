@@ -13,7 +13,9 @@ YUI.add("lang/guestForm_fr", function(Y, NAME) {
     needHotel: 'Besoin d\'aide pour l\'hôtel',
     hotelStart: 'Depuis',
     hotelEnd: 'Juusqu\'au',
-    submit: 'Confirmer'
+    submit: 'Confirmer',
+    thanks: 'Merci',
+    updateLink: 'Mets à jour les infos'
     }
   );
 }, "3.1.0", {requires: ['intl']});

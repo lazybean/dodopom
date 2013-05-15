@@ -13,7 +13,9 @@ YUI.add("lang/guestForm_en", function(Y, NAME) {
     needHotel: 'Need help for hotel booking',
     hotelStart: 'From',
     hotelEnd: 'To',
-    submit: 'Ok'
+    submit: 'Ok',
+    thanks: 'Thanks',
+    updateLink: 'Update your infomation'
     }
   );
 }, "3.1.0", {requires: ['intl']});
