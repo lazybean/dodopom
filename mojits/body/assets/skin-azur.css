@@ -1,0 +1,1099 @@
+body.yui3-skin-azur {
+  background: #0a3e3c;
+  margin: 0px;
+}
+
+.yui3-skin-azur .yui3-button {
+    /* Structure */
+    display: inline-block;
+    *display: inline; /*IE 6/7*/
+    zoom: 1;
+    font-size: 100%;
+    *font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
+    *overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+    padding: 0.4em 1em 0.45em; /*0.4em 1em 0.45em;*/
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    /* Presentation */
+    /*color: #444;  rgba not supported (IE 8) */
+    /*color: rgba(0, 0, 0, 0.80);  rgba supported */
+    /**color: #444;  IE 6 & 7 */
+    color: #e3f7f6;
+    /*border: 1px solid #999;  IE 6/7/8*/
+    /*border: none rgba(0, 0, 0, 0);  IE9 + everything else*/
+    border: solid 1px;
+    border-color: #1f6f6d #134442 #134442 #1f6f6d;
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#00ffffff', GradientType=0);
+    background: background:    -moz-linear-gradient(top, rgba(247, 253, 253, 0.3) 0%, rgba(24, 84, 82, 0) 49%, rgba(24, 84, 82, 0) 51%, rgba(7, 24, 23, 0.3) 100%);
+    background:  -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(247, 253, 253, 0.3)), color-stop(49%, rgba(24, 84, 82, 0)), color-stop(51%, rgba(24, 84, 82, 0)), color-stop(100%,rgba(7, 24, 23, 0.3)));
+    background: -webkit-linear-gradient(top, rgba(247, 253, 253, 0.3) 0%, rgba(24, 84, 82, 0) 49%, rgba(24, 84, 82, 0) 51%, rgba(7, 24, 23, 0.3) 100%);
+    background:      -o-linear-gradient(top, rgba(247, 253, 253, 0.3) 0%, rgba(24, 84, 82, 0) 49%, rgba(24, 84, 82, 0) 51%, rgba(7, 24, 23, 0.3) 100%);
+    background:     -ms-linear-gradient(top, rgba(247, 253, 253, 0.3) 0%, rgba(24, 84, 82, 0) 49%, rgba(24, 84, 82, 0) 51%, rgba(7, 24, 23, 0.3) 100%);
+    background:   linear-gradient(to bottom, rgba(247, 253, 253, 0.3) 0%, rgba(24, 84, 82, 0) 49%, rgba(24, 84, 82, 0) 51%, rgba(7, 24, 23, 0.3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#1a000000',GradientType=0 );
+    background-color: #185452;
+
+    text-decoration: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0, 0.25) inset, 0 2px 2px rgba(255,255,255, 0.30) inset, 0 1px 2px rgba(0,0,0, 0.15);
+    -moz-box-shadow: 0 0 1px rgba(0,0,0, 0.25) inset, 0 2px 2px rgba(255,255,255, 0.30) inset, 0 1px 2px rgba(0,0,0, 0.15);
+    box-shadow: 0 0 1px rgba(0,0,0, 0.25) inset, 0 2px 2px rgba(255,255,255, 0.30) inset, 0 1px 2px rgba(0,0,0, 0.15);
+
+    /* Transitions */
+    -webkit-transition: 0.1s linear -webkit-box-shadow;
+    -moz-transition: 0.1s linear -moz-box-shadow;
+    -ms-transition: 0.1s linear box-shadow;
+    -o-transition: 0.1s linear box-shadow;
+    transition: 0.1s linear box-shadow;
+}
+
+.yui3-skin-azur a.yui3-button {
+    color: #e3f7f6;
+    text-decoration:none;
+}
+
+.yui3-skin-azur a.yui3-button-selected {
+    color: #000000;
+    text-decoration:none;
+}
+
+.yui3-skin-azur .yui3-button-hover,
+.yui3-skin-azur .yui3-button:hover {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#26000000', GradientType=0);
+    background: background:    -moz-linear-gradient(top, rgba(247, 253, 253, 0.3) 0%, rgba(24, 84, 82, 0) 49%, rgba(24, 84, 82, 0) 51%, rgba(7, 24, 23, 0.3) 100%);
+    background:  -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(247, 253, 253, 0.3)), color-stop(49%, rgba(24, 84, 82, 0)), color-stop(51%, rgba(24, 84, 82, 0)), color-stop(100%,rgba(7, 24, 23, 0.3)));
+    background: -webkit-linear-gradient(top, rgba(247, 253, 253, 0.3) 0%, rgba(24, 84, 82, 0) 49%, rgba(24, 84, 82, 0) 51%, rgba(7, 24, 23, 0.3) 100%);
+    background:      -o-linear-gradient(top, rgba(247, 253, 253, 0.3) 0%, rgba(24, 84, 82, 0) 49%, rgba(24, 84, 82, 0) 51%, rgba(7, 24, 23, 0.3) 100%);
+    background:     -ms-linear-gradient(top, rgba(247, 253, 253, 0.3) 0%, rgba(24, 84, 82, 0) 49%, rgba(24, 84, 82, 0) 51%, rgba(7, 24, 23, 0.3) 100%);
+    background:   linear-gradient(to bottom, rgba(247, 253, 253, 0.3) 0%, rgba(24, 84, 82, 0) 49%, rgba(24, 84, 82, 0) 51%, rgba(7, 24, 23, 0.3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#1a000000',GradientType=0 );
+    background-color: #144846;
+    color: #cbf1ef;
+}
+
+.yui3-skin-azur .yui3-button-active,
+.yui3-skin-azur .yui3-button:active {
+    border: inset 1px solid #999;  /*IE 6/7/8*/
+    border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1A000000', endColorstr='#26000000', GradientType=0);
+    background: background:    -moz-linear-gradient(top, rgba(246, 254, 254, 0.3) 0%, rgba(17, 151, 147, 0) 49%, rgba(17, 151, 147, 0) 51%, rgba(11, 96, 94, 0.3) 100%);
+    background:  -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(246, 254, 254, 0.3)), color-stop(49%, rgba(17, 151, 147, 0)), color-stop(51%, rgba(17, 151, 147, 0)), color-stop(100%,rgba(11, 96, 94, 0.3)));
+    background: -webkit-linear-gradient(top, rgba(246, 254, 254, 0.3) 0%, rgba(17, 151, 147, 0) 49%, rgba(17, 151, 147, 0) 51%, rgba(11, 96, 94, 0.3) 100%);
+    background:      -o-linear-gradient(top, rgba(246, 254, 254, 0.3) 0%, rgba(17, 151, 147, 0) 49%, rgba(17, 151, 147, 0) 51%, rgba(11, 96, 94, 0.3) 100%);
+    background:     -ms-linear-gradient(top, rgba(246, 254, 254, 0.3) 0%, rgba(17, 151, 147, 0) 49%, rgba(17, 151, 147, 0) 51%, rgba(11, 96, 94, 0.3) 100%);
+    background:   linear-gradient(to bottom, rgba(246, 254, 254, 0.3) 0%, rgba(17, 151, 147, 0) 49%, rgba(17, 151, 147, 0) 51%, rgba(11, 96, 94, 0.3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#1a000000',GradientType=0 );
+    background-color: #119793;
+    color: #000000;
+
+
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0, 0.25) inset, 0 2px 4px rgba(0,0,0, 0.30) inset;
+    -moz-box-shadow: 0 0 1px rgba(0,0,0, 0.25) inset, 0 2px 4px rgba(0,0,0, 0.30) inset;
+    box-shadow: 0 0 1px rgba(0,0,0, 0.25) inset, 0 2px 4px rgba(0,0,0, 0.30) inset;
+}
+
+.yui3-skin-azur .yui3-button[disabled],
+.yui3-skin-azur .yui3-button-disabled,
+.yui3-skin-azur .yui3-button-disabled:hover,
+.yui3-skin-azur .yui3-button-disabled:active {
+    cursor: default;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    filter: alpha(opacity=55);
+    -khtml-opacity: 0.55;
+    -moz-opacity: 0.55;
+    opacity: 0.55;
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0, 0.25) inset;
+    -moz-box-shadow: 0 0 1px rgba(0,0,0, 0.25) inset;
+    box-shadow: 0 0 1px rgba(0,0,0, 0.25) inset;
+
+    background-color: #185452;
+    color: #e3f7f6;
+
+
+}
+
+/* Firefox: Get rid of the inner focus border */
+.yui3-skin-azur .yui3-button::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+}
+
+/* Firefox: Add a border around a focused button */
+.yui3-skin-azur .yui3-button:-moz-focusring {
+    outline: thin dotted;
+}
+
+
+.yui3-skin-azur .yui3-button-primary,
+.yui3-skin-azur .yui3-button-selected {
+    background-color: #119793;
+    color: #000000;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.17) inset, 0 1px 2px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.17) inset, 0 1px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.17) inset, 0 1px 2px rgba(0, 0, 0, 0.15);
+    border-color: #14b8b2 #108e8a #108e8a #14b8b2;
+}
+
+.yui3-skin-azur .yui3-button-primary:hover,
+.yui3-skin-azur .yui3-button-selected:hover {
+    background-color: #108e8a;
+    color: #f6fefe;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.17) inset, 0 1px 2px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.17) inset, 0 1px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.17) inset, 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+
+.yui3-skin-azur .yui3-sam .yui3-button:-moz-focusring {
+    outline-color: rgba(0, 0, 0, 0.85);
+}
+
+
+.yui3-skin-azur .yui3-night .yui3-button:-moz-focusring {
+    outline-color: rgba(255, 255, 255, 0.85);
+}
+.yui3-skin-azur .yui3-calendar-content {
+    padding: 1em 1em 1.5em;
+    border-radius: 8px;
+    background:    -moz-linear-gradient(top, rgba(247, 253, 253, 0.3) 0%, rgba(10, 36, 35, 0) 49%, rgba(10, 36, 35, 0) 51%, rgba(1, 4, 4, 0.3) 100%);
+    background:  -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(247, 253, 253, 0.3)), color-stop(49%, rgba(10, 36, 35, 0)), color-stop(51%, rgba(10, 36, 35, 0)), color-stop(100%,rgba(1, 4, 4, 0.3)));
+    background: -webkit-linear-gradient(top, rgba(247, 253, 253, 0.3) 0%, rgba(10, 36, 35, 0) 49%, rgba(10, 36, 35, 0) 51%, rgba(1, 4, 4, 0.3) 100%);
+    background:      -o-linear-gradient(top, rgba(247, 253, 253, 0.3) 0%, rgba(10, 36, 35, 0) 49%, rgba(10, 36, 35, 0) 51%, rgba(1, 4, 4, 0.3) 100%);
+    background:     -ms-linear-gradient(top, rgba(247, 253, 253, 0.3) 0%, rgba(10, 36, 35, 0) 49%, rgba(10, 36, 35, 0) 51%, rgba(1, 4, 4, 0.3) 100%);
+    background:   linear-gradient(to bottom, rgba(247, 253, 253, 0.3) 0%, rgba(10, 36, 35, 0) 49%, rgba(10, 36, 35, 0) 51%, rgba(1, 4, 4, 0.3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#1a000000',GradientType=0 );
+    background-color: #0a2423;
+    color: #7fdcd9;
+    border: solid 1px;
+    border-color: #103c3b #071817 #071817 #103c3b;
+}
+
+.yui3-skin-azur .yui3-calendar-grid {
+    padding: 5px;  /* any affect? */
+    border-collapse: collapse;
+}
+
+.yui3-skin-azur .yui3-calendar-header {
+    padding-bottom:10px;
+    color: #e3f7f7;
+}
+
+.yui3-skin-azur .yui3-calendar-header-label {
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.yui3-skin-azur .yui3-calendar-day,
+.yui3-skin-azur .yui3-calendar-prevmonth-day,
+.yui3-skin-azur .yui3-calendar-nextmonth-day {
+    padding: 0.16em 0.16em 0.24em;
+    text-align: center;
+}
+
+
+
+
+.yui3-skin-azur .yui3-calendar-weekday {
+    font-weight: bold;
+    background: {{weekdayHeadBackground}};
+    color: #7fdcd9;
+}
+
+.yui3-skin-azur .yui3-calendar-prevmonth-day,
+.yui3-skin-azur .yui3-calendar-nextmonth-day {
+    background: #0a2423;
+    color: #227c79;
+    border: solid 1px #030c0c;
+}
+
+.yui3-skin-azur .yui3-calendar-day {
+    font-weight: bold;
+    background: #081c1b;
+    color: #68d4cf;
+    border: solid 1px #030c0c;
+}
+.yui3-skin-azur .yui3-calendar-day:hover,         /* When cursor   is used to navigate days */
+.yui3-skin-azur .yui3-calendar-day-highlighted {  /* When keyboard is used to navigate days */
+    background: #134442;
+    color: #cbf0ef;
+}
+
+.yui3-skin-azur .yui3-calendar-day-selected {
+    background:    -moz-linear-gradient(top, rgba(246, 254, 254, 0.3) 0%, rgba(17, 151, 147, 0) 49%, rgba(17, 151, 147, 0) 51%, rgba(11, 96, 94, 0.3) 100%);
+    background:  -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(246, 254, 254, 0.3)), color-stop(49%, rgba(17, 151, 147, 0)), color-stop(51%, rgba(17, 151, 147, 0)), color-stop(100%,rgba(11, 96, 94, 0.3)));
+    background: -webkit-linear-gradient(top, rgba(246, 254, 254, 0.3) 0%, rgba(17, 151, 147, 0) 49%, rgba(17, 151, 147, 0) 51%, rgba(11, 96, 94, 0.3) 100%);
+    background:      -o-linear-gradient(top, rgba(246, 254, 254, 0.3) 0%, rgba(17, 151, 147, 0) 49%, rgba(17, 151, 147, 0) 51%, rgba(11, 96, 94, 0.3) 100%);
+    background:     -ms-linear-gradient(top, rgba(246, 254, 254, 0.3) 0%, rgba(17, 151, 147, 0) 49%, rgba(17, 151, 147, 0) 51%, rgba(11, 96, 94, 0.3) 100%);
+    background:   linear-gradient(to bottom, rgba(246, 254, 254, 0.3) 0%, rgba(17, 151, 147, 0) 49%, rgba(17, 151, 147, 0) 51%, rgba(11, 96, 94, 0.3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#1a000000',GradientType=0 );
+    background-color: #119793;
+    color: #000000;
+}
+
+.yui3-skin-azur .yui3-calendar-day-selected:hover, /* When cursor hovers over selected days */
+.yui3-skin-azur .yui3-calendar-day-selected.yui3-calendar-day-highlighted { /* When keyboard focuses over selected days */
+    background-color: #108e8a;
+    color: #f6fefe;
+}
+
+.yui3-skin-azur .yui3-calendar-header-label {
+    text-align: center;
+}
+
+.yui3-skin-azur .yui3-calendar-left-grid {
+   margin-right:1em;
+}
+
+.yui3-skin-azur .yui3-calendar-right-grid {
+   margin-left:1em;
+}
+
+.yui3-skin-azur .yui3-calendar-selection-disabled,
+.yui3-skin-azur .yui3-calendar-selection-disabled:hover {
+  color: #227c79;
+  background: #0a2423;
+}
+/**************** the following from calendarnavigator.css ******************/
+.yui3-skin-azur .yui3-calendarnav-prevmonth, .yui3-skin-azur .yui3-calendarnav-nextmonth {
+  color: #000000;  /*falls back to text if image not rendered */
+  width: 12px;
+  height: 14px;
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAOCAYAAAA1+Nx+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKNJREFUeNpiYCAeSAPxUiiWZqAi4ATiaiD+DMT/ofgzVIyTUsMDgfghksHo+CFUDcnAAIgP4DEYHR+A6iEIhIB4GgkGo+NpUDMwADMQFwHxBwoMh+EPULOYYYZ7APFVKhiMjkFmejBBLWFjoD5gQ+dQO4iwOloUiOdQYPgcqBkDl0zRQRQRGS2KGkVFHRB/QzL4G1SMk5qpQg6psJMjVhNAgAEAH+qPqeiPEUsAAAAASUVORK5CYII=);
+  background-repeat: no-repeat;
+}
+
+.yui3-skin-azur .yui3-calendarnav-prevmonth:hover, .yui3-skin-azur .yui3-calendarnav-nextmonth:hover {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAOCAYAAAA1+Nx+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPpJREFUeNpi/P//PwMxQD9jszSQ6oJyyy7O8H1KjD5GQhYADeYEUkVAXAHEPFDhL0DcAcR9QIu+k20B0PBAIDUBiOVwKHkExAVAS9aTZAHQYAOowfYMxIGDUIsu4LUAaLAQkGoB4kwG8sB0IK4BWvQOxQKgwcxAdj4Q1wExPwNl4CMQNwHxRKBFfxn10jd5ADm9QKzFQF1wDYiLmaAcNgbqA7CZTEBv7ADS2iDboN5joEIQgczSBpmNHsmiQKodiJPJNHwuEFcCDX49MMkUi0VRUB/hy2ggFy+jtKgohRYVnFDh79CiopuiogLNIjmobxigrn5EjD6AAAMAok9vhfHG8wQAAAAASUVORK5CYII=);
+  color: #0066CC;
+}
+
+.yui3-skin-azur .yui3-calendarnav-month-disabled, .yui3-skin-azur .yui3-calendarnav-month-disabled:hover {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAOCAYAAAA1+Nx+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQhJREFUeNqs0yGLAlEUhuHrKoIgCFbBJghb3F+g0WrVarEqLIhBEEFYWKNNMBktU4z6C5RNkwyCyWQSTPuOfCOCrHNnxwMPyOGe73DAiTmOYywrhy/9/sTBZujN4k0KPbioi6teKuqCmsKGSN/10+q5ehN6QQkrLJB/Mp/Xm5VmAhdkMcEGZWNfZc1MlPGwII42dmiZ/1dLGW1lXhdU8YNvZEz0yijLy6z6FyTN6yvpX7DEOzo4vSD4pCwvc+lfcMEYBUwjhE+VMVbmw7/oiCY+sA4RvNZMUxmB38EWFTSwfxK815uKZkJ/yXMU0cf5rn9Wr6g3f1bC4nwvbIAZRup1Ay671a8AAwC3OzOqxK+rkwAAAABJRU5ErkJggg==);
+  cursor: default;
+  color: #CCCCCC;
+}
+
+.yui3-skin-azur .yui3-calendarnav-prevmonth, .yui3-skin-azur .yui3-calendarnav-prevmonth:hover {
+  background-position: 0px 0px;
+  margin-left:-12px;
+}
+
+.yui3-skin-azur .yui3-calendarnav-nextmonth, .yui3-skin-azur .yui3-calendarnav-nextmonth:hover {
+  background-position: -12px 0px;
+  margin-right: -12px;
+}
+
+.yui3-skin-azur .yui3-calendarnav-prevmonth span, .yui3-skin-azur .yui3-calendarnav-nextmonth span {
+   display: none;
+   *display: block;
+}
+
+/* basic skin styles */
+.yui3-skin-azur .yui3-datatable-table {
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+    border-collapse: separate;
+    border-spacing: 0;
+    /* IE7- doesn't support border-spacing, but separate is needed for more
+     * reliable dimension calculation for scrollable's header width sync,
+     * and it doesn't hurt to have the declaration here.
+     */
+    /**border-collapse: collapse;*/
+    border: solid 1px #071817;
+}
+
+.yui3-skin-azur .yui3-datatable-caption {
+    color: #0286a1;
+    font: italic 85%/1 arial, sans-serif;
+    padding: 1em 0em; /*1em 0;*/
+    text-align: center;
+}
+
+.yui3-skin-azur .yui3-datatable-cell {
+    background-color: #0a2423;
+    color: #7fdcd9;
+}
+.yui3-skin-azur .yui3-datatable-cell,
+.yui3-skin-azur .yui3-datatable-header {
+    border-left: 1px solid #071817; /*  inner column border */
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+  overflow: visible; /*to make this work where the title is really long */
+    padding: 0.3em 0.6em;
+}
+.yui3-skin-azur .yui3-datatable-cell:first-child,
+.yui3-skin-azur .yui3-datatable-first-header {
+    border-left-width: 0px;
+}
+
+.yui3-skin-azur .yui3-datatable-header {
+    background:    -moz-linear-gradient(top, rgba(247, 253, 253, 0.3) 0%, rgba(19, 68, 66, 0) 49%, rgba(19, 68, 66, 0) 51%, rgba(3, 12, 12, 0.3) 100%);
+    background:  -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(247, 253, 253, 0.3)), color-stop(49%, rgba(19, 68, 66, 0)), color-stop(51%, rgba(19, 68, 66, 0)), color-stop(100%,rgba(3, 12, 12, 0.3)));
+    background: -webkit-linear-gradient(top, rgba(247, 253, 253, 0.3) 0%, rgba(19, 68, 66, 0) 49%, rgba(19, 68, 66, 0) 51%, rgba(3, 12, 12, 0.3) 100%);
+    background:      -o-linear-gradient(top, rgba(247, 253, 253, 0.3) 0%, rgba(19, 68, 66, 0) 49%, rgba(19, 68, 66, 0) 51%, rgba(3, 12, 12, 0.3) 100%);
+    background:     -ms-linear-gradient(top, rgba(247, 253, 253, 0.3) 0%, rgba(19, 68, 66, 0) 49%, rgba(19, 68, 66, 0) 51%, rgba(3, 12, 12, 0.3) 100%);
+    background:   linear-gradient(to bottom, rgba(247, 253, 253, 0.3) 0%, rgba(19, 68, 66, 0) 49%, rgba(19, 68, 66, 0) 51%, rgba(3, 12, 12, 0.3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#1a000000',GradientType=0 );
+    background-color: #134442;
+    color: #cbf0ef;
+
+    /*font-weight: normal;*/
+    text-align: left;
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+
+.yui3-skin-azur .yui3-datatable-even .yui3-datatable-cell {
+}
+.yui3-skin-azur .yui3-datatable-odd  .yui3-datatable-cell  {
+    background-color: #071817;
+    color: #68d4cf;
+}
+/************************  sortable ***************/
+.yui3-skin-azur .yui3-datatable-sortable-column {
+    cursor: pointer;
+}
+
+/* this seems to be just the header of a sorted column */
+.yui3-skin-azur .yui3-datatable-columns .yui3-datatable-sorted,
+.yui3-skin-azur .yui3-datatable-sortable-column:hover {
+    background-color: #185452;
+    color: #e3f7f6;
+}
+
+.yui3-skin-azur .yui3-datatable-sort-liner {
+    display: block;
+    height: 100%;
+    position: relative;
+    padding-right: 15px;
+    position: relative;
+}
+
+.yui3-skin-azur .yui3-datatable-sort-indicator {
+    position: absolute;
+    right: 0;
+    bottom: .5ex;
+    width: 7px;
+    height: 10px;
+    background: url(assets/images/sort-arrow-sprite.png) no-repeat 0 0;
+    _background: url(assets/images/sort-arrow-sprite-ie.png) no-repeat 0 0;
+    overflow: hidden;
+}
+
+.yui3-skin-azur .yui3-datatable-sorted .yui3-datatable-sort-indicator {
+    background-position: 0 -10px;
+}
+.yui3-skin-azur .yui3-datatable-sorted-desc .yui3-datatable-sort-indicator {
+    background-position: 0 -20px;
+}
+
+.yui3-skin-azur .yui3-datatable-data .yui3-datatable-even .yui3-datatable-sorted {
+    background-color: #0d302f;
+    color: #9be4e1;
+}
+
+.yui3-skin-azur .yui3-datatable-data .yui3-datatable-odd .yui3-datatable-sorted {
+    background-color: #0a2423;
+}
+
+/* added */
+.yui3-skin-azur .yui3-datatable-columns .yui3-datatable-sorted {
+    background-color: #185452;
+}
+
+
+/*! Copyright 2013 Yahoo! Inc. http://yuilibrary.com/license/ */
+/* This page lists core form styles adopted from Normalize.css. */
+/*! Copyright (c) Nicolas Gallagher and Jonathan Neal */
+
+/*! normalize.css v1.1.0 | MIT License | git.io/normalize */
+
+/* This page has Normalize.css form-specific style rules applied to a .yui3-form context */
+
+/* ==========
+Forms Core
+=========*/
+
+
+/*
+ * Corrects margin displayed oddly in IE 6/7.
+ */
+
+.yui3-skin-azur .yui3-form {
+    margin: 0;
+}
+
+/* Define consistent border, margin, and padding.*/
+ 
+
+.yui3-skin-azur .yui3-form fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 6/7/8/9.
+ * 2. Corrects text not wrapping in Firefox 3.
+ * 3. Corrects alignment displayed oddly in IE 6/7.
+ */
+
+.yui3-skin-azur .yui3-form legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+
+.yui3-skin-azur .yui3-form button,
+.yui3-skin-azur .yui3-form input,
+.yui3-skin-azur .yui3-form select,
+.yui3-skin-azur .yui3-form textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/*
+ * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+.yui3-skin-azur .yui3-form button,
+.yui3-skin-azur .yui3-form input {
+    line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+.yui3-skin-azur .yui3-form button,
+.yui3-skin-azur .yui3-form input[type="button"], /* 1 */
+.yui3-skin-azur .yui3-form input[type="reset"],
+.yui3-skin-azur .yui3-form input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+
+.yui3-skin-azur .yui3-form button[disabled],
+.yui3-skin-azur .yui3-form input[disabled] {
+    cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ * 3. Removes excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+.yui3-skin-azur .yui3-form input[type="checkbox"],
+.yui3-skin-azur .yui3-form input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+.yui3-skin-azur .yui3-form input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+.yui3-skin-azur .yui3-form input[type="search"]::-webkit-search-cancel-button,
+.yui3-skin-azur .yui3-form input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 3+.
+ */
+
+.yui3-skin-azur .yui3-form button::-moz-focus-inner,
+.yui3-skin-azur .yui3-form input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+
+.yui3-skin-azur .yui3-form textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+/* ===============  forms-responsive.css ================
+
+=========================================================*/
+@media only screen and (max-width : 480px) {
+    .yui3-skin-azur .yui3-form button[type='submit'] {
+    margin: 0.7em 0 0;
+    }
+
+    .yui3-skin-azur .yui3-form input[type='text'], .yui3-skin-azur .yui3-form button, .yui3-skin-azur .yui3-form label {
+        margin-bottom: 0.3em;
+        display: block;
+    }
+    
+    .yui3-group input[type='text'] {
+        margin-bottom: 0;
+    }
+
+    .yui3-skin-azur .yui3-form-aligned .yui3-control-group label {
+        margin-bottom: 0.3em;
+        text-align: left;
+        display: block;
+        width: 100%;
+    }
+
+    .yui3-skin-azur .yui3-form-aligned .yui3-controls {
+        margin: 1.5em 0 0 0;
+    }
+
+    .yui3-skin-azur .yui3-form .yui3-help-inline {
+        display: block;
+        font-size: 80%;
+        padding: 0.2em 0 0.8em; /* increased bottom padding to make it group with its related input element */
+    }
+}
+
+/* ===============  forms.css ================
+
+=========================================================*/
+.yui3-skin-azur .yui3-form input,
+.yui3-skin-azur .yui3-form select {
+  padding: 0.5em 0.6em;
+  display: inline-block;
+  border: 1px solid #00191e;
+  font-size: 0.8em;
+  box-shadow: inset 0 1px 3px #00191e;
+  border-radius: 4px;
+  -webkit-transition: 0.3s linear border;
+  -moz-transition: 0.3s linear border;
+  -ms-transition: 0.3s linear border;
+  -o-transition: 0.3s linear border;
+  transition: 0.3s linear border;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+.yui3-skin-azur .yui3-form input:focus,
+.yui3-skin-azur .yui3-form select:focus {
+  outline: 0;
+  outline: thin dotted \9; /* IE6-9 */
+  border-color: #129FEA;
+}
+.yui3-skin-azur .yui3-form .yui3-checkbox,
+.yui3-skin-azur .yui3-form .yui3-radio {
+  margin: 0.5em 0;
+  display: block;
+}
+.yui3-skin-azur .yui3-form input[disabled],
+.yui3-skin-azur .yui3-form select[disabled],
+.yui3-skin-azur .yui3-form textarea[disabled],
+.yui3-skin-azur .yui3-form input[readonly],
+.yui3-skin-azur .yui3-form select[readonly],
+.yui3-skin-azur .yui3-form textarea[readonly] {
+  cursor: not-allowed;
+  box-shadow: inset 0 1px 10px #01262d;
+  background-color: #fff;
+  color: #0286a1;
+  border-color: #00191e;
+}
+.yui3-skin-azur .yui3-form input:focus:invalid,
+.yui3-skin-azur .yui3-form textarea:focus:invalid,
+.yui3-skin-azur .yui3-form select:focus:invalid {
+  color: #b94a48;
+  border: 1px solid #ee5f5b;
+}
+.yui3-skin-azur .yui3-form input:focus:invalid:focus,
+.yui3-skin-azur .yui3-form textarea:focus:invalid:focus,
+.yui3-skin-azur .yui3-form select:focus:invalid:focus {
+  border-color: #e9322d;
+}
+.yui3-skin-azur .yui3-form select {
+  border: 1px solid #00191e;
+  background-color: white;
+}
+.yui3-skin-azur .yui3-form select[multiple] {
+  height: auto;
+}
+.yui3-skin-azur .yui3-form label {
+  margin: 0.5em 0 0.2em;
+  color: #81e8fd;
+  font-size:90%;
+}
+.yui3-skin-azur .yui3-form fieldset {
+  margin: 0;
+  padding: 0.35em 0 0.75em;
+  border: 0;
+}
+.yui3-skin-azur .yui3-form legend {
+  display: block;
+  width: 100%;
+  padding: 0.3em 0;
+  margin-bottom: 0.3em;
+  font-size: 125%;
+  color: #f5fdff;
+  border-bottom: 1px solid #01262d;
+}
+
+.yui3-skin-azur .yui3-form.yui3-form-stacked input[type='text'], 
+.yui3-skin-azur .yui3-form.yui3-form-stacked select, 
+.yui3-skin-azur .yui3-form.yui3-form-stacked label {
+  display: block;
+}
+
+.yui3-skin-azur .yui3-form-aligned input,
+.yui3-skin-azur .yui3-form-aligned textarea,
+.yui3-skin-azur .yui3-form-aligned select,
+.yui3-skin-azur .yui3-form-aligned .yui3-help-inline {
+  display: inline-block;
+  *display: inline; /* IE7 inline-block hack */
+  *zoom: 1;
+  vertical-align: middle;
+}
+
+/* aligned Forms */
+.yui3-skin-azur .yui3-form-aligned .yui3-control-group {
+  margin-bottom: 0.5em;
+}
+.yui3-skin-azur .yui3-form-aligned .yui3-control-group label {
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10em;
+  margin: 0 1em 0 0;
+}
+.yui3-skin-azur .yui3-form-aligned .yui3-controls {
+  margin: 1.5em 0 0 10em;
+}
+
+/* Rounded Inputs */
+.yui3-skin-azur .yui3-form .yui3-input-rounded {
+  border-radius: 30px;
+  padding-left: 1em;
+}
+
+/* Grouped Inputs */
+.yui3-skin-azur .yui3-form .yui3-group fieldset {
+  margin-bottom: 10px;
+}
+.yui3-skin-azur .yui3-form .yui3-group input {
+  display: block;
+  padding: 0.5em 0.6em;
+  margin: 0;
+  border-radius: 0;
+  position: relative;
+  top: -1px;
+}
+.yui3-skin-azur .yui3-form .yui3-group input:focus {
+  z-index: 2;
+}
+.yui3-skin-azur .yui3-form .yui3-group input:first-child {
+  top: 1px;
+  border-radius: 4px 4px 0px 0px;
+}
+.yui3-skin-azur .yui3-form .yui3-group input:last-child {
+  top: -2px;
+  border-radius: 0px 0px 4px 4px;
+}
+.yui3-skin-azur .yui3-form .yui3-group button {
+  margin: 0.35em 0;
+}
+
+.yui3-skin-azur .yui3-form .yui3-input-1 {
+  width: 100%;
+}
+.yui3-skin-azur .yui3-form .yui3-input-2-3 {
+  width: 66%;
+}
+.yui3-skin-azur .yui3-form .yui3-input-1-2 {
+  width: 50%;
+}
+.yui3-skin-azur .yui3-form .yui3-input-1-3 {
+  width: 33%;
+}
+.yui3-skin-azur .yui3-form .yui3-input-1-4 {
+  width: 25%;
+}
+
+/* Inline help for forms */
+.yui3-skin-azur .yui3-form .yui3-help-inline {
+  display: inline-block;
+  padding-left: 0.3em;
+  color: #0286a1;
+  font-size:90%;
+  vertical-align: middle;
+}
+
+/* foundational CSS */
+.yui3-skin-azur .yui3-table {
+    /* Remove spacing between table cells (from Normalize.css) */
+    border-collapse: separate;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #071817;
+}
+
+.yui3-skin-azur .yui3-table caption {
+    color: #0286a1;
+    font: italic 85%/1 arial, sans-serif;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.yui3-skin-azur .yui3-table td,
+.yui3-skin-azur .yui3-table th {
+    border-left: 1px solid #071817;/* inner column border */
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible; /*to make ths where the title is really long work*/
+    padding: 0.3em 0.6em; /* cell padding */
+}
+
+.yui3-skin-azur .yui3-table td:first-child,
+.yui3-skin-azur .yui3-table th:first-child {
+    border-left-width: 0;
+}
+
+.yui3-skin-azur .yui3-table thead {
+    background-color: #134442;
+    color: #cbf0ef;
+    text-align: left;
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+
+/*
+striping:
+even - #fff (white)
+odd - #edf5ff (light blue)
+*/
+.yui3-skin-azur .yui3-table td {
+    background-color: #0a2423;
+    color: #7fdcd9;
+}
+.yui3-skin-azur .yui3-table-odd td {
+    background-color: #071817;
+    color: #68d4cf;
+}
+
+/* BORDERED TABLES */
+.yui3-skin-azur .yui3-table-bordered td {
+    border-bottom:1px solid #071817;
+}
+.yui3-skin-azur .yui3-table-bordered tbody > tr:last-child td,
+.yui3-skin-azur .yui3-table-horizontal tbody > tr:last-child td {
+    border-bottom-width: 0;
+}
+
+/* HORIZONTAL BORDERED TABLES */
+.yui3-skin-azur .yui3-table-horizontal td,
+.yui3-skin-azur .yui3-table-horizontal th {
+    border-width: 0 0 1px 0;
+    border-bottom:1px solid #071817;
+}
+.yui3-skin-azur .yui3-table-horizontal tbody > tr:last-child td {
+    border-bottom-width: 0;
+}
+
+/* from YUICSS list-core.css */
+.yui3-skin-azur .yui3-menu ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.yui3-skin-azur .yui3-menu.yui3-menu-open {
+    visibility: visible;
+    z-index: 2;
+    width: 100%;
+}
+
+.yui3-skin-azur .yui3-menu ul {
+    left: -10000px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: -10000px;
+    z-index: 1;
+}
+
+.yui3-skin-azur .yui3-menu > ul { position: relative; }
+
+.yui3-skin-azur .yui3-menu-open > ul {
+    left: 0;
+    top: 0;
+    visibility: visible;
+}
+
+.yui3-skin-azur .yui3-menu li { position: relative; }
+
+.yui3-skin-azur .yui3-menu a, .yui3-skin-azur .yui3-menu .yui3-menu-heading {
+    display: block;
+    color: inherit;
+    line-height: 1.5em;
+    padding: 0.35em 1.4em;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.yui3-skin-azur .yui3-menu.yui3-menu-horizontal > .yui3-menu-heading {
+    display: inline-block;
+    margin: 0;
+    zoom: 1;
+    *display: inline;
+    vertical-align: middle;
+}
+.yui3-skin-azur .yui3-menu.yui3-menu-horizontal > ul {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    vertical-align: middle;
+}
+
+.yui3-skin-azur .yui3-menu li a { 0.35em 1.4em; }
+
+.yui3-skin-azur .yui3-menu-can-have-children > .yui3-menu-label:after {
+    content: '\25B8';
+    float: right;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif; /* These specific fonts have the Unicode char we need. */
+    margin-right: -20px;
+    margin-top: -1px;
+}
+
+.yui3-skin-azur .yui3-menu-can-have-children > .yui3-menu-label {
+    padding-right:30px;
+}
+
+.yui3-skin-azur .yui3-menu-separator {
+    background-color: #00191e;
+    display: block;
+    height: 1px;
+    font-size: 0;
+    margin: 7px 2px;
+    overflow: hidden;
+}
+
+.yui3-skin-azur .yui3-menu-hidden { display: none; }
+
+/* FIXED MENU */
+.yui3-skin-azur .yui3-menu-fixed {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+}
+
+
+/* HORIZONTAL MENU CODE */
+
+/* Initial menus should be inline-block so that they are horizontal */
+.yui3-skin-azur .yui3-menu-horizontal li {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    vertical-align: middle;
+}
+
+/* Submenus should still be display:block; */
+.yui3-skin-azur .yui3-menu-horizontal li li {
+    display: block;
+}
+
+/* Content after should be down arrow */
+.yui3-skin-azur .yui3-menu-horizontal > .yui3-menu-children > .yui3-menu-can-have-children > .yui3-menu-label:after {
+    content: "\25BE";
+}
+/*Add extra padding to elements that have the arrow so that the hover looks nice */
+.yui3-skin-azur .yui3-menu-horizontal > .yui3-menu-children > .yui3-menu-can-have-children > .yui3-menu-label {
+    padding-right:30px;
+}/* end from yuicss/list-core.css *******************************************/
+/* from yuicss list-paginator.css */
+.yui3-skin-azur .yui3-paginator {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.yui3-skin-azur .yui3-paginator li {
+    display: inline-block;
+    *display: inline;
+    /* IE 7 inline-block hack */
+    *zoom: 1;
+    margin: 0 -0.35em 0 0;
+}
+.yui3-skin-azur .yui3-paginator .yui3-button {
+    border-radius: 0;
+    padding: 0.8em 1.4em;
+    vertical-align: top;
+    height: 1.1em;
+}
+.yui3-skin-azur .yui3-paginator .yui3-button:focus {
+    outline-style: none;
+}
+.yui3-skin-azur .yui3-paginator .prev, .yui3-skin-azur .yui3-paginator .next {
+    /*color: #C0C1C3; allow yui3-button to color text*/
+}
+.yui3-skin-azur .yui3-paginator .prev {
+    border-radius: 4px 0px 0px 4px;
+}
+.yui3-skin-azur .yui3-paginator .next {
+    border-radius: 0px 4px 4px 0px;
+}
+/* end from YUICSS list-paginator.css ******************************/
+/* from YUICSS list.css *******************************************/
+/* MAIN MENU STYLING */
+
+.yui3-skin-azur .yui3-menu.yui3-menu-open,
+.yui3-skin-azur .yui3-menu.yui3-menu-horizontal li .yui3-menu-children {
+    background: #0a2423; /* Old browsers */
+    border-radius: 3px;
+    border: 1px solid #071817;
+}
+
+/* remove borders for horizontal menus */
+.yui3-skin-azur .yui3-menu.yui3-menu-horizontal {
+    border: none;
+}
+
+
+
+/* LINK STYLES */
+
+.yui3-skin-azur .yui3-menu a {
+    border: 1px solid transparent;
+    border-left: none;
+    border-right: none;
+
+}
+
+.yui3-skin-azur .yui3-menu a,
+.yui3-skin-azur .yui3-menu .yui3-menu-can-have-children > li:after {
+    color: #7fdcd9;
+}
+
+.yui3-skin-azur .yui3-menu .yui3-menu-can-have-children > li:hover:after {
+    color: #68d4cf;
+}
+
+
+
+/* HOVER STATES */
+.yui3-skin-azur .yui3-menu li a:hover {
+    background: #081c1b;
+    color: #68d4cf;
+
+}
+
+/* DISABLED STATES */
+.yui3-skin-azur .yui3-menu li.yui3-menu-disabled a:hover {
+    background: #0a2423;
+    color: #227c79;
+}
+
+.yui3-skin-azur .yui3-menu .yui3-menu-disabled > a {
+    background-image: none;
+    border-color: transparent;
+    cursor: default;
+}
+
+.yui3-skin-azur .yui3-menu .yui3-menu-disabled > a,
+.yui3-skin-azur .yui3-menu .yui3-menu-can-have-children.yui3-menu-disabled > a:after {
+    color: #227c79;
+}
+
+/* HEADINGS */
+.yui3-skin-azur .yui3-menu .yui3-menu-heading {
+    color: #e3f7f7;
+    text-transform: uppercase;
+    font-size:90%;
+    margin-top:0.5em;
+}
+
+
+/* SELECTED MENU ITEM */
+.yui3-skin-azur .yui3-menu .yui3-menu-selected a {
+    font-weight: bold;
+    background-color: #119793;
+    color: #000000;
+}
+
+/* FIXED MENU */
+.yui3-skin-azur .yui3-menu.yui3-menu-open.yui3-menu-fixed {
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #071817;
+}
+/* end from YUICSS list.css ***********************************/
+/* from YUICSS list-responsive.css ****************************/
+/* RESPONSIVE */
+
+@media (max-width: 480px) {
+
+    .yui3-skin-azur .yui3-menu-horizontal {
+        width:100%;
+    }
+
+    .yui3-skin-azur .yui3-menu-children li {
+        display: block;
+        border-bottom:1px solid block;
+    }
+
+}
+/* end from list-responsive.css ******************/
+
+

@@ -46,13 +46,13 @@ YUI.add('guestForm', function(Y, NAME) {
       ac.models.get('guestFormModelFoo').getById(id, function(err, data) {
         
         if ( !err ) {
-        ac.done(data);
+        ac.done({'update': true, 'data': data });
         } else {
         ac.done({error:'Guest not found'});
         }
       });
       } else {
-        ac.done({error:'Who are you?'});
+        ac.done({'update': false, 'data': {} });
       }
 
     },
@@ -69,15 +69,22 @@ YUI.add('guestForm', function(Y, NAME) {
     updateFormPost: function(ac) {
       var obj = ac.params.getFromBody(),
       model = ac.models.get('guestFormModelFoo'),
-      me = this;
-      Y.log('guestForm update :'+ Y.JSON.stringify(obj), 'WARN', NAME);
-      model.updateGuest(obj, function (err, data){
+      me = this,
+      cb =  function (err, data){
         Y.log('guestForm upddated:'+ Y.JSON.stringify(obj) + '\n err: ' + err , 'WARN', NAME);
         if (err) {
           ac.done({'error': err});
         } else {
           ac.done(data, 'updateSuccess');
-        }});
+        }};
+
+      Y.log('guestForm update :'+ Y.JSON.stringify(obj), 'WARN', NAME);
+      if ( obj.id ) {
+      model.updateGuest(obj, cb);
+
+        } else {
+      model.createGuest(obj, cb);
+        }
     },
 
     list: function (ac) {

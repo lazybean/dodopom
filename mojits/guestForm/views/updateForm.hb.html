@@ -1,4 +1,4 @@
-<div class="yui3-skin-sam" id="{{mojit_view_id}}">
+<div id="{{mojit_view_id}}">
   <style>
     .yui3-popup-calendar-hidden {
       display: none;
@@ -14,30 +14,38 @@
   {{else}}
   <form class="yui3-form yui3-form-aligned" action="" method="POST">
     <fieldset>
-      <input name="id" type="hidden" value="{{id}}"/>
+      <input name="id" type="hidden" value="{{data.id}}"/>
 
-      <div class="yui3-control-group" ><label> Name:</label> <input name="name" type="text" value="{{name}}" readonly />
+      <div class="yui3-control-group" ><label> Name:</label> <input name="name" type="text" value="{{data.name}}" {{#if update}}readonly {{/if}} />
       </div>
-      <div class="yui3-control-group"><label> First Name: </label> <input name="firstName" type="text" value="{{firstName}}" readonly/>
+      <div class="yui3-control-group"><label> First Name: </label> <input name="firstName" type="text" value="{{data.firstName}}"  {{#if update}}readonly {{/if}} />
       </div>
-      <div class="yui3-control-group"> <label> email: </label> <input name="email" type="text"  value="{{email}}" />
+      <div class="yui3-control-group"> <label> adress: </label> <input name="adress" type="text"  value="{{data.adress}}" />
       </div>
+      <div class="yui3-control-group"> <label> email: </label> <input name="email" type="text"  value="{{data.email}}" />
+      </div>
+      <div class="yui3-control-group"> <label> lang: </label> <input name="lang" type="text"  list="langlist" value="{{data.lang}}" />  
+        <datalist id="langlist">
+          <option value="zh">zh</option>
+          <option value="en">en</option>
+          <option value="fr">fr</option>
+          <option value="jp">jp</option>
+        </datalist>
       <div class="yui3-control-group"> 
         <input type="hidden" value="0" name="veget" />
-        <label> veget: </label> <input name="veget" type="checkbox" {{#if veget}}checked {{/if}} value="1" />  
+        <label> veget: </label> <input name="veget" type="checkbox" {{#if data.veget}}checked {{/if}} value="1" />  
 
       </div>
       <div class="yui3-control-group">
         <input type="hidden" value="0" name="needHotel" />
-        <label> need Hotel: </label> <input name="needHotel" type="checkbox" value="1" {{#if needHotel}}checked {{/if}} />  
+        <label> need Hotel: </label> <input name="needHotel" type="checkbox" value="1" {{#if data.needHotel}}checked {{/if}} />  
       </div>
-      <div class="yui3-control-group"> <label> From: </label> <input name="hotelStart" type="text" value="{{hotelStart}}" class="time" />  
+      <div class="yui3-control-group"> <label> From: </label> <input name="hotelStart" type="text" value="{{data.hotelStart}}" class="time" />  
       </div>
-      <div class="yui3-control-group"> <label> To: </label> <input name="hotelEnd" type="text" value="{{hotelEnd}}" class="time" />  
+      <div class="yui3-control-group"> <label> To: </label> <input name="hotelEnd" type="text" value="{{data.hotelEnd}}" class="time" />  
       </div>
-      <div class="yui3-control-group"> <label> lang: </label> <input name="lang" type="text" value="{{lang}}" />  
       </div>
-      <div class="yui3-controls"> <button>Ok</button>
+      <div class="yui3-controls"> <button class="yui3-button">Ok</button>
       </div> 
     </fieldset>
   </form>

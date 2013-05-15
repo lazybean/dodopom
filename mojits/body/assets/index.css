@@ -1,8 +1,33 @@
-body {
-  background: lightblue;
+/*body {
+  background: #DDDDFF;
+  background-image: url(./px_by_Gre3g_@2X.png);
+  background-size: 100px;
+  background-position: initial initial;
+  background-repeat: initial initial;
+}
+*/
+
+header {
+  margin: auto;
+  padding: 15px 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+#weddingBanner {
+  color: #7fdcd9;
+  font-size: 2em;
+  padding-left: 65px;
+  padding-bottom: 49px;
+  margin-left: 10%;
+  background-image: url('./taiwanChocali.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
 }
 
 .mainContent {
   width: 80%;
   margin: auto;
 }
+

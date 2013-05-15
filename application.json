@@ -11,20 +11,23 @@
     "appPort": "8666",
     "specs": {
       "frame": {
-        "type": "HTMLFrameMojit",
+        "type": "body",
         "config": {
           "title": "Guest Creation",
           "deploy": true,
         "assets": {
           "top": {
             "css": [
-              "http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallerycss-cssform/gallerycss-cssform-min.css"
+              "http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallerycss-cssform/gallerycss-cssform-min.css",
+              "./index.css",
+              "./skin-azur.css"
               ]
           }
         },
           "child": {
             "type": "guestForm",
             "config": {
+              "deploy": true,
               "mongo": {
                 "url": "mongodb://localhost/weddingGuests",
                 "modelName": "Guests",
@@ -32,6 +35,7 @@
                   "name":  { "type": "String", "required": true },  
                   "firstName": "String",
                   "email": "String",
+                  "adress": "String",
                   "veget": "Boolean",
                   "needHotel": "Boolean",
                   "hotelStart": {"type": "Date"},

@@ -1,0 +1,82 @@
+digraph "wedding@0.0.1 server" {
+    // defaults
+    rankdir="LR";
+    fontsize="11";
+    node [fontsize="11",shape="rectangle",style="filled,rounded",fillcolor="white"];
+    edge [color="grey33",arrowsize="0.5",fontsize="8"];
+    graph [style="filled",color="lightgrey"];
+
+    // nodes
+    "json";
+
+    // edges
+    "body" -> "mojito";
+    "body" -> "mojito-util";
+    "body" -> "mojito-assets-addon";
+    "body" -> "mojito-deploy-addon";
+    "body" -> "mojito-config-addon";
+    "body" -> "mojito-composite-addon";
+    "body" -> "HTMLFrameMojit";
+    "guestForm" -> "mojito";
+    "guestForm" -> "mojito-assets-addon";
+    "guestForm" -> "mojito-models-addon";
+    "guestForm" -> "mojito-params-addon";
+    "guestForm" -> "guestFormModelFoo";
+    "guestFormModelFoo" -> "mongo";
+    "mongo" -> "json";
+
+    // subgraphs
+    subgraph "cluster_2" {
+        // nodes
+        "body";
+
+        // this graph
+        label="mojit body";
+    };
+    subgraph "cluster_3" {
+        // nodes
+        "guestForm";
+        "guestFormModelFoo";
+
+        // this graph
+        label="mojit guestForm";
+    };
+    subgraph "cluster_4" {
+        // nodes
+        "HTMLFrameMojit";
+
+        // this graph
+        label="mojit HTMLFrameMojit";
+    };
+    subgraph "cluster_5" {
+        // nodes
+        "mongo";
+
+        // this graph
+        label="package wedding@0.0.1";
+    };
+    subgraph "cluster_6" {
+        // nodes
+        "mojito-assets-addon";
+        "mojito-composite-addon";
+        "mojito-config-addon";
+        "mojito-deploy-addon";
+        "mojito-models-addon";
+        "mojito-params-addon";
+        "mojito";
+        "mojito-util";
+
+        // this graph
+        label="package mojito@0.5.7";
+    };
+
+    // this graph
+    clusterrank="local";
+    compound="true";
+    model="circuit";
+    overlap="false";
+    ranksep="1.5";
+    remincross="true";
+    splines="polyline";
+    start="self";
+};
