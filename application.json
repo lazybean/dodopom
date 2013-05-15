@@ -35,7 +35,7 @@
                   "name":  { "type": "String", "required": true },  
                   "firstName": "String",
                   "email": "String",
-                  "adress": "String",
+                  "address": "String",
                   "veget": "Boolean",
                   "needHotel": "Boolean",
                   "hotelStart": {"type": "Date"},
