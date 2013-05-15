@@ -39,11 +39,12 @@ YUI.add('guestFormBinderUpdateForm', function(Y, NAME) {
         // what you want to do with the selected date
         // so it is up to you to do something with the emitted event.
         popupcalendar.on('dateSelected', function(e) { 
-          var d = e.newSelection[0];
+          //var d = Y.Date.format(e.newSelection[0], {format:"%x"});
+          var d =e.newSelection[0];
           popupcalendar.get('input').set('value', d);
         });
       });
 
     }
   };
-}, '0.0.1', {requires: ['gallery-popup-calendar', 'mojito-client']});
+}, '0.0.1', {requires: ['datatype-date', 'gallery-popup-calendar', 'mojito-client']});
