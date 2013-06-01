@@ -1,0 +1,30 @@
+#movingPommeMenu {
+  position: fixed;
+  top: 10%;
+  left: 1%;
+  background-image: url("/static/wedding/assets/pomme.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:20%;
+
+}
+
+#movingPommeMenu .pure-menu.pure-menu-open {
+  background: rgba(255,255,255, 0.5);
+  width: 50%;
+  margin: 40% auto;
+  border: none;
+}
+
+#movingPommeMenu .pure-menu li.pure-menu-hover {
+  background: none repeat scroll 0% 0% rgb(238, 238, 238);
+}
+
+#movingPommeMenu li {
+  list-style: none;
+}
+
+.content div {
+  min-height: 550px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
