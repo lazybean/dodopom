@@ -52,6 +52,7 @@
 
       "mainFrame": {
         "base": "frame",
+        "type": "HTMLFrameMojit",
         "config": {
           "child": {
             "type": "weddInfo"

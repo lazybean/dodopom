@@ -33,12 +33,20 @@ YUI.add('weddInfoBinderIndex', function(Y, NAME) {
       var me = this;
       this.node = node;
       node.all('nav a').plug(Y.Plugin.ScrollNav);
-      Y.one('body').plug(Y.Plugin.ScrollSpy, {
+      var contentNodes = Y.all('.content');
+      contentNodes.setStyle('height', Y.DOM.winHeight());
+    /*  Y.one('body').plug(Y.Plugin.ScrollSpy, {
         "target": "#movingPommeMenu ul",
         "activeClass": "pure-menu-hover"
+      });
+      */
+      Y.on('windowresize', function(evt) {
+        console.log('resize');
+        Y.log('resize', 'WARN', NAME);
+        contentNodes.setStyle('height', Y.DOM.winHeight());
       });
     }
 
   };
 
-}, '0.0.1', {requires: ['gallery-scroll-nav', 'gallery-scrollspy', 'mojito-client']});
+}, '0.0.1', {requires: ['gallery-scroll-nav', 'gallery-scrollspy', 'event', 'event-resize', 'mojito-client']});
