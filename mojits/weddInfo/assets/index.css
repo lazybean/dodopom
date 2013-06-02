@@ -2,7 +2,7 @@
   position: fixed;
   top: 15%;
   *left: 1%;
-  background-image: url("/static/wedding/assets/pomme.png");
+  background-image: url("./pomme.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 10em;
