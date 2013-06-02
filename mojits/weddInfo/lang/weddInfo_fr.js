@@ -7,6 +7,7 @@ YUI.add("lang/weddInfo_fr", function(Y, NAME) {
       venue: 'Où',
       photos: 'Photos',
       util: 'Info',
+      guest: 'Qui',
       mainContentTitle: 'PommE et Lulu',
       mainContentDate: '29 Juin 2013',
       mainContentWhat: 'Nous avons la grande joie de vous inviter pour célébrer avec nous notre mariage.',
@@ -29,7 +30,8 @@ YUI.add("lang/weddInfo_fr", function(Y, NAME) {
             what: ['Festin'],
             adress: 'No. 33, Sìwéi 3rd Rd'
           }
-      ]
+      ],
+      guestContentRegister: 'Enregistrez-vous, s\'il vous plaît'
     }
   );
 }, "0.1", {requires: ["intl"]});

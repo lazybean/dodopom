@@ -10,23 +10,8 @@
     },
     "appPort": "8666",
     "specs": {
-      "frame": {
-        "type": "body",
-        "config": {
-          "title": "PommE+Dodo",
-          "deploy": true,
-        "assets": {
-          "top": {
-            "css": [
-              "http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallerycss-cssform/gallerycss-cssform-min.css",
-              "http://yui.yahooapis.com/pure/0.1.0/pure-min.css",
-              "./index.css",
-              "./skin-happyPom.css",
-              "./skin-azur.css"
-              ]
-          }
-        },
-          "child": {
+
+          "guestForm": {
             "type": "guestForm",
             "config": {
               "deploy": true,
@@ -46,6 +31,25 @@
                 }
               }
             }
+          },
+      "frame": {
+        "type": "body",
+        "config": {
+          "title": "PommE+Dodo",
+          "deploy": true,
+          "assets": {
+            "top": {
+              "css": [
+                "http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallerycss-cssform/gallerycss-cssform-min.css",
+              "http://yui.yahooapis.com/pure/0.1.0/pure-min.css",
+              "./index.css",
+              "/static/wedding/assets/skin-happyPom.css",
+              "/static/wedding/assets/skin-azur.css"
+                ]
+            }
+          },
+          "child": {
+            "base": "guestForm"
           }
         }
       },
@@ -55,10 +59,18 @@
         "type": "HTMLFrameMojit",
         "config": {
           "child": {
-            "type": "weddInfo"
-}
-}
-} 
+            "type": "weddInfo",
+            "config": {
+              "children": {
+                "guest": {
+                  "base": "guestForm",
+                  "action": "updateForm"
+                }
+              }
+            }
+          }
+        }
+      } 
     }
 },
 {
@@ -66,5 +78,4 @@
   "staticHandling": {
     "forceUpdate": true
   }
-}
-]
+}]

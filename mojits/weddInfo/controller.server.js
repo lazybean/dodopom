@@ -23,11 +23,11 @@ YUI.add('weddInfo', function(Y, NAME) {
          */
         index: function(ac) {
                 ac.assets.addCss('./index.css');
-                ac.done({
+                ac.composite.done({
                 "lang": ac.intl.lang()
                 });
         }
 
     };
 
-}, '0.0.1', {requires: ['mojito', 'mojito-assets-addon', 'mojito-intl-addon']});
+}, '0.0.1', {requires: ['mojito', 'mojito-assets-addon', 'mojito-intl-addon', 'mojito-composite-addon']});

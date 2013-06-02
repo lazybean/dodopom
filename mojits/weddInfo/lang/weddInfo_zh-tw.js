@@ -7,6 +7,7 @@ YUI.add("lang/weddInfo_en", function(Y, NAME) {
       venue: '婚禮',
       photos: '相片',
       util: '旅遊資訊',
+      guest: '我要參加',
       mainContentTitle: '佳蓉 & Ludo',
       mainContentDate: '2013.6.29',
       mainContentWhat: '邀請您到高雄見證我們的婚禮，期待與您分享這份喜悅。',
@@ -29,7 +30,8 @@ YUI.add("lang/weddInfo_en", function(Y, NAME) {
             what: ['宴客'],
             adress: '高雄市四維三路33號(市政府斜對面)'
           }
-      ]
+      ],
+    guestContentRegister: '我要參加'
     }
   );
 }, "0.1", {requires: ["intl"]});

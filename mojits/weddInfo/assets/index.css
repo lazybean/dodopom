@@ -35,7 +35,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   text-align: center;
-  font-family: fantasy, times, "Times new roman";
+  font-family: fantasy, times, "Times new roman", Georgia, "FangSong", "Times New Roman", serif, STFangSong; 
   color: white;
 }
 
@@ -70,4 +70,10 @@
 .location {
   text-align: left;
   padding:5px;
+}
+
+#guest {
+  background: url('./guestPhoto.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -7,6 +7,7 @@ YUI.add("lang/weddInfo_en", function(Y, NAME) {
       venue: 'Venue',
       photos: 'Photos',
       util: 'Useful Information',
+      guest: 'Guest',
       mainContentTitle: 'ApplE and Ludo',
       mainContentDate: 'June 29, 2013',
       mainContentWhat: 'We are happy to invite you at this date, for celebrating our wedding.',
@@ -29,7 +30,8 @@ YUI.add("lang/weddInfo_en", function(Y, NAME) {
             what: ['Dinner'],
             adress: 'No. 33, Sìwéi 3rd Rd'
           }
-      ]
+      ],
+      guestContentRegister: 'Please register'
     }
   );
 }, "0.1", {requires: ["intl"]});

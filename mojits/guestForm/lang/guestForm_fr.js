@@ -12,7 +12,7 @@ YUI.add("lang/guestForm_fr", function(Y, NAME) {
     veget: 'Végétarien',
     needHotel: 'Besoin d\'aide pour l\'hôtel',
     hotelStart: 'Depuis',
-    hotelEnd: 'Juusqu\'au',
+    hotelEnd: 'Jusqu\'au',
     submit: 'Confirmer',
     thanks: 'Merci',
     updateLink: 'Mets à jour les infos'
