@@ -1,7 +1,7 @@
-YUI.add("lang/weddInfo_en", function(Y, NAME) {
+YUI.add("lang/weddInfo_zh", function(Y, NAME) {
   Y.Intl.add(
     "weddInfo",
-    "en",
+    "zh",
     {
       main: '首頁',
       venue: '婚禮',
