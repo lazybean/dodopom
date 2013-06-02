@@ -10,7 +10,10 @@ YUI.add("lang/weddInfo_en", function(Y, NAME) {
       guest: 'Guest',
       mainContentTitle: 'ApplE and Ludo',
       mainContentDate: 'June 29, 2013',
-      mainContentWhat: 'We are happy to invite you at this date, for celebrating our wedding.',
+      mainContentWhat: [
+        'We are happy to invite you at this date,',
+        'for celebrating our wedding.'
+      ],
       mainContentDetails: [
         {
           what:'3pm Ceremony', 

@@ -10,7 +10,10 @@ YUI.add("lang/weddInfo_fr", function(Y, NAME) {
       guest: 'Qui',
       mainContentTitle: 'PommE et Lulu',
       mainContentDate: '29 Juin 2013',
-      mainContentWhat: 'Nous avons la grande joie de vous inviter pour célébrer avec nous notre mariage.',
+      mainContentWhat: [
+      'Nous avons la grande joie de vous inviter',
+      'pour célébrer avec nous notre mariage.'
+      ],
       mainContentDetails: [
         {
           what:'3pm Cérémonie', 
