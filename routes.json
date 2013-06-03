@@ -23,6 +23,6 @@
     "_main_updateGuest": {
       "verbs": ["POST"],
       "path": "/",
-      "call": "frame.updateFormPost"
+      "call": "guestForm.updateFormPost"
     }
 }]
