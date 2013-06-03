@@ -9,6 +9,11 @@ YUI.add('mongo', function (Y, NAME) {
     * create the mongoose schema and return an object to creat and get data
     */
     createSchema: function (schemaObj, schemaName, url) {
+      if (!url ) {
+        url = process.env.MONGOLAB_URI ||
+        process.env.MONGOHQ_URL ||
+        "mongodb://localhost/weddingGuests";
+      }
       Y.log('createSchema ' + schemaName, 'WARN', NAME);
       var schema,
       model,

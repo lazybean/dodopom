@@ -26,7 +26,6 @@
         "config": {
           "deploy": true,
           "mongo": {
-            "url": "mongodb://localhost/weddingGuests",
             "modelName": "Guests",
             "schema": {
               "name":  { "type": "String", "required": true },  
