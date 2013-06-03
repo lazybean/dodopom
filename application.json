@@ -5,33 +5,43 @@
     ],
     "yui": {
       "config":{
-        "gallery": "gallery-2013.05.15-21-12"
+        "gallery": "gallery-2013.05.15-21-12",
+        "groups": {
+          "leaflet": {
+            "base": "http://cdn.leafletjs.com/leaflet-0.5/",
+            "modules": {
+              "leaflet": {
+                "path": "leaflet.js"   
+              }
+            }
+          }
+        }
       }
     },
     "appPort": "8666",
     "specs": {
 
-          "guestForm": {
-            "type": "guestForm",
-            "config": {
-              "deploy": true,
-              "mongo": {
-                "url": "mongodb://localhost/weddingGuests",
-                "modelName": "Guests",
-                "schema": {
-                  "name":  { "type": "String", "required": true },  
-                  "firstName": "String",
-                  "email": "String",
-                  "address": "String",
-                  "veget": "Boolean",
-                  "needHotel": "Boolean",
-                  "hotelStart": {"type": "Date"},
-                  "hotelEnd": {"type": "Date"},
-                  "lang": "String"
-                }
-              }
+      "guestForm": {
+        "type": "guestForm",
+        "config": {
+          "deploy": true,
+          "mongo": {
+            "url": "mongodb://localhost/weddingGuests",
+            "modelName": "Guests",
+            "schema": {
+              "name":  { "type": "String", "required": true },  
+              "firstName": "String",
+              "email": "String",
+              "address": "String",
+              "veget": "Boolean",
+              "needHotel": "Boolean",
+              "hotelStart": {"type": "Date"},
+              "hotelEnd": {"type": "Date"},
+              "lang": "String"
             }
-          },
+          }
+        }
+      },
       "frame": {
         "type": "body",
         "config": {
@@ -43,8 +53,7 @@
                 "http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallerycss-cssform/gallerycss-cssform-min.css",
               "http://yui.yahooapis.com/pure/0.1.0/pure-min.css",
               "./index.css",
-              "/static/wedding/assets/skin-happyPom.css",
-              "/static/wedding/assets/skin-azur.css"
+              "/static/wedding/assets/skin-happyPom.css"
                 ]
             }
           },
@@ -58,6 +67,14 @@
         "base": "frame",
         "type": "HTMLFrameMojit",
         "config": {
+          "assets": {
+            "top": {
+              "css": [
+                "http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallerycss-cssform/gallerycss-cssform-min.css",
+              "http://yui.yahooapis.com/pure/0.1.0/pure-min.css"
+                ]
+            }
+          },
           "child": {
             "type": "weddInfo",
             "config": {
@@ -65,6 +82,10 @@
                 "guest": {
                   "base": "guestForm",
                   "action": "updateForm"
+                },
+                "map": {
+                  "type": "leafLetMojit",
+                  "deploy": "true"
                 }
               }
             }

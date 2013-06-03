@@ -24,16 +24,6 @@ YUI.add("lang/weddInfo_zh", function(Y, NAME) {
           where:'寒軒國際大飯店'
         }
       ],
-      venueContent: [
-        { where: '武昌教會 1F',
-          what: ['婚禮', '團體照', '下午茶'],
-          adress: '民權一路38號(近四維三路口)'},
-          { 
-            where: '寒軒大飯店 6F', 
-            what: ['宴客'],
-            adress: '高雄市四維三路33號(市政府斜對面)'
-          }
-      ],
       guestContentRegister: '我要參加',
       guestMailTo: '備註@ApplE'
     }

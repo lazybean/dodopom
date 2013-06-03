@@ -32,7 +32,11 @@ YUI.add('guestFormBinderUpdateForm', function(Y, NAME) {
           width:'400px',
           showPrevMonth: true,
           showNextMonth: true,
-          date: new Date(2013, 6, 1)
+          date: new Date(2013, 5, 1),
+ align: {
+       node: input,
+               points: [Y.WidgetPositionAlign.TR, Y.WidgetPositionAlign.TL]
+                   }
         });
 
         // The popup calendar makes no assumptions as to 

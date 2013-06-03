@@ -35,16 +35,18 @@ YUI.add('weddInfoBinderIndex', function(Y, NAME) {
       node.all('nav a').plug(Y.Plugin.ScrollNav);
       var contentNodes = Y.all('.content');
       contentNodes.setStyle('height', Y.DOM.winHeight());
-    /*  Y.one('body').plug(Y.Plugin.ScrollSpy, {
+      me.mojitProxy.broadcast('resize');
+      /*  
+      Y.one('body').plug(Y.Plugin.ScrollSpy, {
         "target": "#movingPommeMenu ul",
         "activeClass": "pure-menu-hover"
       });
       */
-      Y.on('windowresize', function(evt) {
-        console.log('resize');
-        Y.log('resize', 'WARN', NAME);
-        contentNodes.setStyle('height', Y.DOM.winHeight());
-      });
+        Y.on('windowresize', function(evt) {
+          Y.log('resize', 'WARN', NAME);
+          contentNodes.setStyle('height', Y.DOM.winHeight());
+          //me.mojitProxy.broadcast('resize');
+        });
     }
 
   };

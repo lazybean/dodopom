@@ -7,6 +7,13 @@
   width: 11em;
   z-index: 1;
 }
+#movingPommeMenu .pure-menu a, #movinePommeMenu .pure-menu .pure-menu-can-have-children > li:after {
+  color: #FFFFFF;
+}
+
+#movingPommeMenu .pure-menu li a:hover {
+    color: black;
+}
 
 .pomMenu {
   width: 11em;
@@ -28,7 +35,6 @@
 }
 
 .content {
-  height: 2000px;
   background-color: white;
 }
 
@@ -36,11 +42,11 @@
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   text-align: center;
-  font-family: fantasy, times, "Times new roman", Georgia, "FangSong", "Times New Roman", serif, STFangSong; 
+  font-family: times, "Times new roman", Georgia, "FangSong", "Times New Roman", serif, STFangSong; 
   color: white;
 }
 
-  
+
 #main {
   background: url('./mainPhoto.jpg');
   background-repeat: no-repeat;
@@ -49,14 +55,15 @@
 
 .mainText {
   width: 25em;
+  font-size: 18px;
   line-height: 1.5;
 }
 
 #main .textBox > div {
-    position: relative;
-    top: 15%;
-    padding: 5px;
-  }
+  position: relative;
+  top: 15%;
+  padding: 5px;
+}
 
 #venue {
   position: relative;
@@ -75,7 +82,17 @@
 
 .location {
   text-align: left;
-  padding:5px;
+  padding:0 15px;
+  cursor: pointer;
+}
+
+.location address {
+  line-height: 1px;
+}
+
+.location h3 {
+  line-height: 16px;
+  text-decoration: underline;
 }
 
 .venueText {

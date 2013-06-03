@@ -24,16 +24,6 @@ YUI.add("lang/weddInfo_en", function(Y, NAME) {
           where:'Han-Hsien International Hotel'
         }
       ],
-      venueContent: [
-        { where: 'Wu-Tang Church',
-          what: ['Ceremony', 'Photo', 'Apero'],
-          adress: 'No. 38, Mínquán 1st Rd'},
-          { 
-            where: 'Han-Hsien Intl Hotel', 
-            what: ['Dinner'],
-            adress: 'No. 33, Sìwéi 3rd Rd'
-          }
-      ],
       guestContentRegister: 'Please register',
       guestMailTo: 'Comments'
     }
