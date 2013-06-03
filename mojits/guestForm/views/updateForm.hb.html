@@ -24,26 +24,20 @@
       </div>
       <div class="yui3-control-group"> <label> {{lang.email}}: </label> <input name="email" type="text"  value="{{data.email}}" />
       </div>
-      <div class="yui3-control-group"> <label> {{lang.lang}}: </label> <input name="lang" type="text"  list="langlist" value="{{data.lang}}" />  
-        <datalist id="langlist">
-          <option value="zh">zh</option>
-          <option value="en">en</option>
-          <option value="fr">fr</option>
-          <option value="jp">jp</option>
-        </datalist>
-      <div class="yui3-control-group"> 
-        <input type="hidden" value="0" name="veget" />
-        <label> {{lang.veget}}: </label> <input name="veget" type="checkbox" {{#if data.veget}}checked {{/if}} value="1" />  
-
-      </div>
       <div class="yui3-control-group">
-        <input type="hidden" value="0" name="needHotel" />
-        <label> {{lang.needHotel}}: </label> <input name="needHotel" type="checkbox" value="1" {{#if data.needHotel}}checked {{/if}} />  
-      </div>
-      <div class="yui3-control-group"> <label> {{lang.hotelStart}}: </label> <input name="hotelStart" type="text" value="{{data.hotelStart}}" class="time" />  
-      </div>
-      <div class="yui3-control-group"> <label> {{lang.hotelEnd}}: </label> <input name="hotelEnd" type="text" value="{{data.hotelEnd}}" class="time" />  
-      </div>
+        <div class="yui3-control-group"> 
+          <input type="hidden" value="0" name="veget" />
+          <label> {{lang.veget}}: </label> <input name="veget" type="checkbox" {{#if data.veget}}checked {{/if}} value="1" />  
+
+        </div>
+        <div class="yui3-control-group">
+          <input type="hidden" value="0" name="needHotel" />
+          <label> {{lang.needHotel}}: </label> <input name="needHotel" type="checkbox" value="1" {{#if data.needHotel}}checked {{/if}} />  
+        </div>
+        <div class="yui3-control-group"> <label> {{lang.hotelStart}}: </label> <input name="hotelStart" type="text" value="{{data.hotelStart}}" class="time" />  
+        </div>
+        <div class="yui3-control-group"> <label> {{lang.hotelEnd}}: </label> <input name="hotelEnd" type="text" value="{{data.hotelEnd}}" class="time" />  
+        </div>
       </div>
       <div class="yui3-controls"> <button class="pure-button yui3-button">{{lang.submit}}</button>
       </div> 
