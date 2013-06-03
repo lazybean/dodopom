@@ -34,7 +34,8 @@ YUI.add("lang/weddInfo_fr", function(Y, NAME) {
             adress: 'No. 33, Sìwéi 3rd Rd'
           }
       ],
-      guestContentRegister: 'Enregistrez-vous, s\'il vous plaît'
+      guestContentRegister: 'Enregistrez-vous, s\'il vous plaît',
+      guestMailTo: 'Comments'
     }
   );
 }, "0.1", {requires: ["intl"]});

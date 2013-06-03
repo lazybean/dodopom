@@ -34,7 +34,8 @@ YUI.add("lang/weddInfo_zh", function(Y, NAME) {
             adress: '高雄市四維三路33號(市政府斜對面)'
           }
       ],
-      guestContentRegister: '我要參加'
+      guestContentRegister: '我要參加',
+      guestMailTo: '備註@ApplE'
     }
   );
 }, "0.1", {requires: ["intl"]});

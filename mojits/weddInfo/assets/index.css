@@ -86,3 +86,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#guest .yui3-form label {
+  color: #001;
+}
+#guest .yui3-form {
+  background-color: rgba(255, 255, 255, 0.3);
+}
