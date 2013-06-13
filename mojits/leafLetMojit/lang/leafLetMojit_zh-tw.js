@@ -19,8 +19,8 @@ YUI.add("lang/leafLetMojit_zh", function(Y, NAME) {
         },
         {
           where: '左營高鐵站',
-          lat: '22.692586',
-          lng: '120.295379'
+          lat: '22.6878',
+          lng: '120.3078'
         },
         {
           where: '小港機場',

@@ -20,13 +20,18 @@ YUI.add("lang/leafLetMojit_en", function(Y, NAME) {
         },
         {
           where: 'HSR Train Station',
-          lat: '22.692586',
-          lng: '120.295379'
+          lat: '22.6878',
+          lng: '120.3078'
         },
         {
           where: 'Airport',
           lat: '22.571774',
           lng: '120.34509'
+        },
+        {
+          where: 'Rolex',
+          lat: '46.51891',
+          lng:'6.56943'
         }
       ]
     }

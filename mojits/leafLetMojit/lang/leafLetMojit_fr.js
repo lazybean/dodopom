@@ -19,8 +19,8 @@ YUI.add("lang/leafLetMojit_fr", function(Y, NAME) {
         },
         {
           where: 'Gare Train HSR',
-          lat: '22.692586',
-          lng: '120.295379'
+          lat: '22.6878',
+          lng: '120.3078'
         },
         {
           where: 'Aéroport',
